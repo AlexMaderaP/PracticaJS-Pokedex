@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@321&family=Odibee+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Pokedex LaunchX</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./pokedex.png" alt="pokedex logo" />
+    </header>
+
+    <section>
+      <div class="buscadorImagen">
+        <div class="backImagen">
+          <img
+            src="./pokeball.png"
+            alt="Pokemon"
+            ,
+            id="pokeImg"
+            width="200px"
+          />
+        </div>
+        <input
+          type="text"
+          placeholder="Enter Pokemon or ID ..."
+          name="pokemon"
+          id="pokemon"
+          class="Buscador"
+        />
+        <button onclick="imprimir()" class="botonAzul">
+          <span class="letra"> Search </span>
+        </button>
+      </div>
+
+      <div class="contenedorStats">
+        <div class="principalData">
+          <h1 id="name">Name</h1>
+
+          <h1 id="pokeId">Id</h1>
+
+          <h1 id="type">Type</h1>
+        </div>
+
+        <div class="contenedorCaracteristicas">
+          <div>
+            <h3>Height</h3>
+            <p id="height">0</p>
+          </div>
+
+          <div>
+            <h3>Weight</h3>
+            <p id="weight">0</p>
+          </div>
+
+          <div>
+            <h3>Exp</h3>
+            <p id="exp">0</p>
+          </div>
+        </div>
+
+        <div class="contenedorSkills">
+          <div>
+            <h3>HP</h3>
+            <p id="hp">0</p>
+          </div>
+
+          <div>
+            <h3>ATK</h3>
+            <p id="atk">0</p>
+          </div>
+
+          <div>
+            <h3>DEF</h3>
+            <p id="def">0</p>
+          </div>
+
+          <div>
+            <h3>SATK</h3>
+            <p id="satk">0</p>
+          </div>
+
+          <div>
+            <h3>SDEF</h3>
+            <p id="sdef">0</p>
+          </div>
+
+          <div>
+            <h3>SPD</h3>
+            <p id="spd">0</p>
+          </div>
+        </div>
+
+        <div class="moves">
+          <h3>Movements</h3>
+          <ul class="moves_list" id="movimientos"></ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <script src="./pokedex.js"></script>
+  </footer>
+</html>
